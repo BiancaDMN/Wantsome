@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Forms and Inputs</title>
+    </head>
+    <body>
+        <h1>HTML Forms & Inputs</h1>
+    <form action='/action_page.php'>
+        <label for='name'>Your name:</label>
+            <input type='text' id='name' name='name' minlength="3" maxlength="10" placeholder='Type your name' required>
+            <br><br>
+        <label for='email'> Your email:</label>
+            <input type='email' id='email' name='email' placeholder='Type your email' required>
+    <br><br>
+        <label for='topping'>Topping:</label>
+            <input type='radio' name='topping' value='supreme'>Supreme
+            <input type='radio' name='topping' value='vegetarian'>Vegetarian
+            <input type='radio' name='topping' value='hawaian'>Hawaian
+    <br><br>
+        <label for='sauce'>Sauce:</label>
+        <select name='sauce'>
+            <option value='tomato'>Tomato</option>
+            <option value='garlic'>Garlic</option>
+            <option value='onion'>Onion</option>
+        </select>
+    <br><br>
+        <label for='extras'>Extras:</label>
+            <input type='checkbox' name='extras1' value='cheese'> Cheese
+            <input type='checkbox' name='extras2' value='onions'> Onions
+            <input type='checkbox' name='extras3' value='olives'> Olives
+    <br><br>
+        <label for='quantity'>Quantity:</label>
+            <input type='number' id='quantity' name='quantity' min="1" max="7">
+    <br><br>
+        <label for='delivery'>Delivery instructions:</label>
+        <br>
+        <textarea name='delivery' id='delivery' rows='10' cols='70' placeholder='Type your instructions' required></textarea>
+    <br><br>
+        <label for='date'>Delivery date:</label>
+            <input type='date' id='date' name='Delivery date'>
+    <br><br><br>
+        <input type='submit' name="submit" value='Send Order'>
+        <input type='reset' name='reset' value='Reset'>
+    </form>
+    </body>
+</html>
