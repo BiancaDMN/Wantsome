@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>HTML Forms & Inputs</title>
+    </head>
+    <body>
+        <h1>Homework</h1>
+        <form action='action_page.php'>
+        <label for='name'>Nume:</label>
+    <br>
+            <input type='text' id='name' name='name' requeired>
+    <br><br>
+        <label for='name'>Prenume:</label>
+    <br>
+            <input type='text'id='name' name='name' required>
+    <br><br>
+        <label for='gender'>Sex:</label>
+    <br>
+        <select name='gender'>
+            <option value='male'selected>Barbat</option>
+            <option value='female'>Femeie</option>
+        </select>
+    <br><br>
+        <label for='age'>Varsta:</label>
+    <br>
+        <input type='number' id='age' name='age' min='18' max='85'>
+    <br><br>
+        <label for='country'>Tara:</label>
+    <br>
+        <select name='country'>
+            <option value='romania'selected>Romania</option>
+            <option value='france'>Franta</option>
+            <option value='italy'>Italia</option>
+            <option value='other'>Alta tara</option>
+        </select>
+    <br><br>
+        <label for='city'>Oras</label>
+    <br>
+        <select name='city'>
+            <option value='bucharest'selected>Bucuresti</option>
+            <option value='paris'>Paris</option>
+            <option value='rome'>Roma</option>
+            <option value='other'>Alt oras</option>
+        </select>
+    <br><br>
+        <label for='address'>Adresa</label>
+    <br>
+        <input type='text' id='address' name='address'>
+    <br><br>
+        <label for='postal code'>Codul postal</label>
+    <br>
+        <input type='text' id='postal code' name='postal code'>
+    <br><br>
+        <label for='email'>Adresa de email</label>
+    <br>
+        <input type='email' id='email' name='email' required>
+    <br><br>
+        <label for='message'>Mesaj</label>
+    <br>
+        <input type='text' id='message' name='message'>
+    <br><br>
+        <input type='file' name='filename' value='Alege fisier'>
+    <br><br>
+        <input type='submit' name='submit' value='Trimitere'>
+        <input type='reset' name='reset' value='Resetare'>
+    </form>
+    </body>
+</html>
